@@ -21,6 +21,14 @@ public class Reservation {
 		this.client = client;
 
 	}
+	
+	/* Méthode toString */
+	public String toString()
+	{
+		return "Client : {" + client + "}, du " + dateArrivee + " au " + dateDepart;
+	}
+	
+	/* === ACCESSEURS ET MUTATEURS === */
 
 	/* Accesseur sur la date d'arrivée de la réservation */
 	public Date getDateArrivee() {

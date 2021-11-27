@@ -5,7 +5,7 @@ public class Lit {
 
 	/* Constructeur par défaut qui construit un lit simple */
 	public Lit() {
-		this.nbPlaces = 1;
+		this.nbPlaces = 2;
 	}
 
 	/* Constructeur qui prend en paramètre le nombre de places du lit */

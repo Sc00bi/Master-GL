@@ -36,7 +36,7 @@ public class Chambre {
 					|| (reservee.getDateArrivee().equals(arrivee) && reservee.getDateDepart().equals(depart)))
 				return false;
 		}
-		return false;
+		return true;
 	}
 
 	/*
@@ -52,7 +52,7 @@ public class Chambre {
 					|| (reservee.getDateArrivee().equals(arrivee) && reservee.getDateDepart().equals(depart)))
 				return false;
 		}
-		return false;
+		return true;
 	}
 
 	/* Méthode qui réserve le séjour si celui-ci est bien disponible */
@@ -63,6 +63,22 @@ public class Chambre {
 		}
 		return 0;
 
+	}
+	
+	/* Retourne le nombre de places disponibles dans la chambre */
+	public int nombrePlaces()
+	{
+		int compteur = 0;
+		for (Lit l : lits)
+		{
+			compteur += l.getNbPlaces();
+		}
+		return compteur;
+	}
+	
+	public String toString()
+	{
+		return "Chambre " + numero + ", " + this.nombrePlaces() + " personnes maximum, " + prix + " euros.";
 	}
 
 	/* === ACCESSEURS ET MUTATEURS === */

@@ -17,6 +17,14 @@ public class Client {
 		this.prenom = prenom;
 		this.carte = new CarteCredit(numeroCarte, moisExpiration, anneeExpiration);
 	}
+	
+	/* Méthode toString */
+	public String toString()
+	{
+		return nom + " " + prenom;
+	}
+
+	/* === ACCESSEURS ET MUTATEURS === */
 
 	/* Accesseur sur le nom du client */
 	public String getNom() {
