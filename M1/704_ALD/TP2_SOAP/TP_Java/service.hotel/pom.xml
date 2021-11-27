@@ -2,11 +2,12 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.example.math</groupId>
-	<artifactId>web.service</artifactId>
+	<groupId>com.example.service.web</groupId>
+	<artifactId>service.hotel</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>MathSOAPWebService</name>
-	<description>Un service web SOAP avec JAX-WS</description>
+	<name>ServiceAgenceHotel</name>
+	<description>Service web utilisant SOAP pour la gestions d'hotels et de réservations par une agence
+	</description>
 	<dependencies>
 		<dependency>
 			<groupId>org.jboss.spec</groupId>
