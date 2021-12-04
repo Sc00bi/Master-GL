@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-04T08:56:44.866Z" agent="5.0 (Windows)" etag="MAYLj8TNW4JJsXndou1q" version="15.9.1" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-04T09:21:24.836Z" agent="5.0 (Windows)" etag="aL7RfEKhuy9l6hRmImuQ" version="15.9.1" type="github">
   <diagram id="Xhoym6ci3_DiR0_Iyr-P" name="Q1.1">
     <mxGraphModel dx="1803" dy="1745" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -434,7 +434,7 @@
           <mxGeometry y="194" width="160" height="8" as="geometry" />
         </mxCell>
         <mxCell id="FoFjy-knUjFo6BYXKsBZ-1" value="Hotel" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
-          <mxGeometry x="-500" y="-130" width="330" height="444" as="geometry" />
+          <mxGeometry x="-500" y="-130" width="330" height="466" as="geometry" />
         </mxCell>
         <mxCell id="FoFjy-knUjFo6BYXKsBZ-2" value="- nom : String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="FoFjy-knUjFo6BYXKsBZ-1">
           <mxGeometry y="26" width="330" height="26" as="geometry" />
@@ -481,14 +481,17 @@
         <mxCell id="FoFjy-knUjFo6BYXKsBZ-19" value="+ ecrireChambres() :  void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="FoFjy-knUjFo6BYXKsBZ-1">
           <mxGeometry y="356" width="330" height="22" as="geometry" />
         </mxCell>
-        <mxCell id="FoFjy-knUjFo6BYXKsBZ-16" value="+ rechercheChambre(int, String, String) : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="FoFjy-knUjFo6BYXKsBZ-1">
+        <mxCell id="FoFjy-knUjFo6BYXKsBZ-20" value="+ reserverChambre(int, String, String, String, String, int, int, int)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="FoFjy-knUjFo6BYXKsBZ-1">
           <mxGeometry y="378" width="330" height="22" as="geometry" />
         </mxCell>
-        <mxCell id="FoFjy-knUjFo6BYXKsBZ-17" value="+ rechercheChambre(int, String, String, double) : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="FoFjy-knUjFo6BYXKsBZ-1">
+        <mxCell id="FoFjy-knUjFo6BYXKsBZ-16" value="+ rechercheChambre(int, String, String) : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="FoFjy-knUjFo6BYXKsBZ-1">
           <mxGeometry y="400" width="330" height="22" as="geometry" />
         </mxCell>
-        <mxCell id="FoFjy-knUjFo6BYXKsBZ-18" value="+ rechercheChambre(int, String, String, double, double) : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="FoFjy-knUjFo6BYXKsBZ-1">
+        <mxCell id="FoFjy-knUjFo6BYXKsBZ-17" value="+ rechercheChambre(int, String, String, double) : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="FoFjy-knUjFo6BYXKsBZ-1">
           <mxGeometry y="422" width="330" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="FoFjy-knUjFo6BYXKsBZ-18" value="+ rechercheChambre(int, String, String, double, double) : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="FoFjy-knUjFo6BYXKsBZ-1">
+          <mxGeometry y="444" width="330" height="22" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
