@@ -1,4 +1,4 @@
-package service.hotel;
+package service.hotel.conceptualisation;
 
 public class Client {
 	private String nom, prenom;
@@ -17,10 +17,9 @@ public class Client {
 		this.prenom = prenom;
 		this.carte = new CarteCredit(numeroCarte, moisExpiration, anneeExpiration);
 	}
-	
+
 	/* Méthode toString */
-	public String toString()
-	{
+	public String toString() {
 		return nom + " " + prenom;
 	}
 

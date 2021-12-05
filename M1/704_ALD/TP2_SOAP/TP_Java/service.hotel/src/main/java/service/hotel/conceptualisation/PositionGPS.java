@@ -1,4 +1,4 @@
-package service.hotel;
+package service.hotel.conceptualisation;
 
 public class PositionGPS {
 	private double latitude, longitude;

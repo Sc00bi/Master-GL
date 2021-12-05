@@ -1,4 +1,4 @@
-package service.hotel;
+package service.hotel.conceptualisation;
 
 public class Adresse {
 
@@ -42,9 +42,8 @@ public class Adresse {
 		this.numero = numero;
 		this.typeVoie = TypeVoie.RUE;
 	}
-	
-	public String toString()
-	{
+
+	public String toString() {
 		return numero + " " + lieuDit + typeVoie.getAbrevation() + " " + nomVoie + ", " + ville + ", " + pays;
 	}
 

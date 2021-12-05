@@ -1,4 +1,4 @@
-package service.hotel;
+package service.hotel.conceptualisation;
 
 import java.util.Date;
 
@@ -7,6 +7,7 @@ public class Reservation {
 	private Client client;
 
 	/* Constructeur de Reservation avec tous les paramètres nécessaires */
+	@SuppressWarnings("deprecation")
 	Reservation(Client client, int anneeArrivee, int moisArrivee, int jourArrivee, int anneeDepart, int moisDepart,
 			int jourDepart) {
 		this.dateArrivee = new Date(anneeArrivee, moisArrivee, jourArrivee);
@@ -15,19 +16,19 @@ public class Reservation {
 	}
 
 	/* Constructeur utilisant des chaînes de caractères pour entrer les Dates */
+	@SuppressWarnings("deprecation")
 	public Reservation(Client client, String dateArrivee, String dateDepart) {
 		this.dateArrivee = new Date(dateArrivee);
 		this.dateDepart = new Date(dateDepart);
 		this.client = client;
 
 	}
-	
+
 	/* Méthode toString */
-	public String toString()
-	{
+	public String toString() {
 		return "Client : {" + client + "}, du " + dateArrivee + " au " + dateDepart;
 	}
-	
+
 	/* === ACCESSEURS ET MUTATEURS === */
 
 	/* Accesseur sur la date d'arrivée de la réservation */
@@ -36,6 +37,7 @@ public class Reservation {
 	}
 
 	/* Mutateur sur lla date d'arrivée de la réservation */
+	@SuppressWarnings("deprecation")
 	public void setDateArrive(String dateArrivee) {
 		this.dateArrivee = new Date(dateArrivee);
 	}
@@ -46,6 +48,7 @@ public class Reservation {
 	}
 
 	/* Mutateur sur la date de départ de la réservation */
+	@SuppressWarnings("deprecation")
 	public void setDateDepart(String dateDepart) {
 		this.dateDepart = new Date(dateDepart);
 	}

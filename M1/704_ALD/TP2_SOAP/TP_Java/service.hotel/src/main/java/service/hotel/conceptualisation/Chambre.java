@@ -1,4 +1,4 @@
-package service.hotel;
+package service.hotel.conceptualisation;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -30,7 +30,7 @@ public class Chambre {
 	}
 
 	/* Recherche si la chambre est disponible pour le créneau entré en paramètre */
-	public boolean estDipo(Date arrivee, Date depart) {
+	public boolean estDispo(Date arrivee, Date depart) {
 		for (Reservation reservee : reservations) {
 			if (reservee.getDateArrivee().before(depart) || reservee.getDateDepart().after(arrivee)
 					|| (reservee.getDateArrivee().equals(arrivee) && reservee.getDateDepart().equals(depart)))
@@ -44,7 +44,7 @@ public class Chambre {
 	 * pour des dates en chaines de caracteres
 	 */
 	@SuppressWarnings("deprecation")
-	public boolean estDipo(String arriveeS, String departS) {
+	public boolean estDispo(String arriveeS, String departS) {
 		Date arrivee = new Date(departS);
 		Date depart = new Date(arriveeS);
 		for (Reservation reservee : reservations) {
@@ -57,28 +57,32 @@ public class Chambre {
 
 	/* Méthode qui réserve le séjour si celui-ci est bien disponible */
 	public int reserver(Reservation reservation) {
-		if (this.estDipo(reservation.getDateArrivee(), reservation.getDateDepart())) {
+		if (this.estDispo(reservation.getDateArrivee(), reservation.getDateDepart())) {
 			reservations.add(reservation);
 			return 1;
 		}
 		return 0;
 
 	}
-	
+
 	/* Retourne le nombre de places disponibles dans la chambre */
-	public int nombrePlaces()
-	{
+	public int nombrePlaces() {
 		int compteur = 0;
-		for (Lit l : lits)
-		{
+		for (Lit l : lits) {
 			compteur += l.getNbPlaces();
 		}
 		return compteur;
 	}
 	
-	public String toString()
+	/* Retourne le nombre de lits dans la chambre */
+	public int nombreLits()
 	{
-		return "Chambre " + numero + ", " + this.nombrePlaces() + " personnes maximum, " + prix + " euros.";
+		return lits.size();
+	}
+
+	/* Méthode toString */
+	public String toString() {
+		return "Chambre " + numero + ", " + this.nombrePlaces() + " personne(s) maximum, " + prix + " euros.";
 	}
 
 	/* === ACCESSEURS ET MUTATEURS === */
